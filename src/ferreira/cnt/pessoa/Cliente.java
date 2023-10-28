@@ -1,5 +1,8 @@
 package ferreira.cnt.pessoa;
 
+import ferreira.cnt.endereco.Endereco;
+import ferreira.cnt.telefone.Telefone;
+
 public class Cliente extends Pessoa{
 	private String codigo;
 	private String profissao;
@@ -10,8 +13,8 @@ public class Cliente extends Pessoa{
 						  String profissao, 
 						  String nomeCli,
 						  String dataNascimentoCli,
-						  String enderecoCli, 
-						  String telefoneCli) {
+						  Endereco enderecoCli, 
+						  Telefone telefoneCli) {
 		this.codigo = codigo;
 		this.profissao = profissao;
 		setNome(nomeCli);

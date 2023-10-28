@@ -1,5 +1,8 @@
 package ferreira.cnt.pessoa;
 
+import ferreira.cnt.endereco.Endereco;
+import ferreira.cnt.telefone.Telefone;
+
 public class Funcionario extends Pessoa{
 	private int matricula;
 	private String cargo;
@@ -14,8 +17,8 @@ public class Funcionario extends Pessoa{
 						  String dataAdmissao, 
 						  String nomeFunc, 
 						  String dataNascimentoFunc,
-						  String enderecoFunc, 
-						  String telefoneFunc) {
+						  Endereco enderecoFunc, 
+						  Telefone telefoneFunc) {
 		this.matricula = matricula;
 		this.cargo = cargo;
 		this.salario = salario;

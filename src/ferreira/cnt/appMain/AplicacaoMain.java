@@ -21,9 +21,9 @@ public class AplicacaoMain {
 		Telefone objTelefone = new Telefone();
 		Endereco objEndereco = new Endereco();
 		
-		objFuncionario.cadastrar(1, "Professor", 2000, "28/10/2023", "Nunes", "11/09/1981", "Endereco", "83988066901");
+		objFuncionario.cadastrar(1, "Professor", 2000, "28/10/2023", "Nunes", "11/09/1981", objEndereco, objTelefone);
 		
-		objCliente.cadastrar("1", "Contador", "Francisco", "11/09/1981", "Rua sem nome", "32227058");
+		objCliente.cadastrar("1", "Contador", "Francisco", "11/09/1981", objEndereco, objTelefone);
 		
 		objCargo.cadastrar("512410", "Porteiro");
 		

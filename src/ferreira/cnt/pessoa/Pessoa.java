@@ -1,17 +1,20 @@
 package ferreira.cnt.pessoa;
 
+import ferreira.cnt.endereco.Endereco;
+import ferreira.cnt.telefone.Telefone;
+
 public class Pessoa {
 	private String nome;
 	private String dataNascimento;
-	private String endereco;
-	private String telefone;
+	private Endereco endereco;
+	private Telefone telefone;
 
 	
 	// metodo public void nao retorna nada
 	public void cadastrar(String nome,
 						  String dataNascimento,
-						  String endereco,
-						  String telefone) {
+						  Endereco endereco,
+						  Telefone telefone) {
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
 		this.endereco = endereco;
@@ -50,19 +53,19 @@ public class Pessoa {
 		this.dataNascimento = dataNascimento;
 	}
 
-	public String getEndereco() {
+	public Endereco getEndereco() {
 		return endereco;
 	}
 
-	public void setEndereco(String endereco) {
+	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
 
-	public String getTelefone() {
+	public Telefone getTelefone() {
 		return telefone;
 	}
 
-	public void setTelefone(String telefone) {
+	public void setTelefone(Telefone telefone) {
 		this.telefone = telefone;
 	}
 }
