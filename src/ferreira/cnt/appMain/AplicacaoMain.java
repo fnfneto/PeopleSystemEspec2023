@@ -1,11 +1,11 @@
 package ferreira.cnt.appMain;
 
-import ferreira.cnt.endereco.Endereco;
+import ferreira.cnt.auxiliar.Endereco;
+import ferreira.cnt.auxiliar.Telefone;
 import ferreira.cnt.ocupacao.Cargo;
 import ferreira.cnt.pessoa.Cliente;
 import ferreira.cnt.pessoa.Funcionario;
 import ferreira.cnt.pessoa.Pessoa;
-import ferreira.cnt.telefone.Telefone;
 
 // ou import ferreira.cnt.pessoa.*;
 

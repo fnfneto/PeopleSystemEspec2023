@@ -1,4 +1,4 @@
-package ferreira.cnt.telefone;
+package ferreira.cnt.auxiliar;
 
 public class Telefone {
 	private String ddd;

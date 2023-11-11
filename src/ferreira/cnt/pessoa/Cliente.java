@@ -1,7 +1,7 @@
 package ferreira.cnt.pessoa;
 
-import ferreira.cnt.endereco.Endereco;
-import ferreira.cnt.telefone.Telefone;
+import ferreira.cnt.auxiliar.Endereco;
+import ferreira.cnt.auxiliar.Telefone;
 
 public class Cliente extends Pessoa{
 	private String codigo;

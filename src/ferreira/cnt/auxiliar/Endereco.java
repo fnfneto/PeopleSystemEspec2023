@@ -1,4 +1,4 @@
-package ferreira.cnt.endereco;
+package ferreira.cnt.auxiliar;
 
 public class Endereco {
 	private String tipoLogradouro;
