@@ -1,7 +1,9 @@
 package ferreira.cnt.pessoa;
 
-import ferreira.cnt.auxiliar.Endereco;
-import ferreira.cnt.auxiliar.Telefone;
+import java.time.LocalDate;
+
+import ferreira.cnt.composicao.Endereco;
+import ferreira.cnt.composicao.Telefone;
 
 public class Cliente extends Pessoa{
 	private String codigo;
@@ -12,15 +14,12 @@ public class Cliente extends Pessoa{
 	public void cadastrar(String codigo, 
 						  String profissao, 
 						  String nomeCli,
-						  String dataNascimentoCli,
+						  LocalDate dataNascimentoCli,
 						  Endereco enderecoCli, 
 						  Telefone telefoneCli) {
 		this.codigo = codigo;
 		this.profissao = profissao;
-		setNome(nomeCli);
-		setDataNascimento(dataNascimentoCli);
-		setEndereco(enderecoCli);
-		setTelefone(telefoneCli);
+		
 		
 	}
 

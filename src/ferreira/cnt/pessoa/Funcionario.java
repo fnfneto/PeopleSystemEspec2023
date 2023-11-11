@@ -1,7 +1,9 @@
 package ferreira.cnt.pessoa;
 
-import ferreira.cnt.auxiliar.Endereco;
-import ferreira.cnt.auxiliar.Telefone;
+import java.time.LocalDate;
+
+import ferreira.cnt.composicao.Endereco;
+import ferreira.cnt.composicao.Telefone;
 
 public class Funcionario extends Pessoa{
 	private int matricula;
@@ -16,17 +18,14 @@ public class Funcionario extends Pessoa{
 						  double salario, 
 						  String dataAdmissao, 
 						  String nomeFunc, 
-						  String dataNascimentoFunc,
+						  LocalDate dataNascimentoFunc,
 						  Endereco enderecoFunc, 
 						  Telefone telefoneFunc) {
 		this.matricula = matricula;
 		this.cargo = cargo;
 		this.salario = salario;
 		this.dataAdmissao = dataAdmissao;
-		setNome(nomeFunc);
-		setDataNascimento(dataNascimentoFunc);
-		setEndereco(enderecoFunc);
-		setTelefone(telefoneFunc);
+		
 		
 	}
 	

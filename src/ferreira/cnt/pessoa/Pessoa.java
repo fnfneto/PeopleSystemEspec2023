@@ -1,18 +1,24 @@
 package ferreira.cnt.pessoa;
 
-import ferreira.cnt.auxiliar.Endereco;
-import ferreira.cnt.auxiliar.Telefone;
+// Importacao de bibliotecas do próprio java
+import java.time.LocalDate;
+import java.time.Period;
 
+// Importação das classes personalizadas
+import ferreira.cnt.composicao.Endereco;
+import ferreira.cnt.composicao.Telefone;
+
+//Declaração das variaveis da classe
 public class Pessoa {
 	private String nome;
-	private String dataNascimento;
+	private LocalDate dataNascimento;
 	private Endereco endereco;
 	private Telefone telefone;
 
 	
 	// metodo public void nao retorna nada
 	public void cadastrar(String nome,
-						  String dataNascimento,
+						  LocalDate dataNascimento,
 						  Endereco endereco,
 						  Telefone telefone) {
 		this.nome = nome;
@@ -31,7 +37,9 @@ public class Pessoa {
 		// retorna algo
 		int idade = 0;
 		//subtrair o ano atual do ano de nascimento.
-		return idade;
+		LocalDate dataAtual = LocalDate.now();
+		Period periodoPessoa = Period.between(dataNascimento, dataAtual);
+		return idade = periodoPessoa.getYears();
 		
 	}
 
@@ -45,11 +53,11 @@ public class Pessoa {
 		this.nome = nome;
 	}
 
-	public String getDataNascimento() {
+	public LocalDate getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public void setDataNascimento(String dataNascimento) {
+	public void setDataNascimento(LocalDate dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 

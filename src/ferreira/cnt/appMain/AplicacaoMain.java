@@ -1,7 +1,9 @@
 package ferreira.cnt.appMain;
 
-import ferreira.cnt.auxiliar.Endereco;
-import ferreira.cnt.auxiliar.Telefone;
+import java.time.LocalDate;
+
+import ferreira.cnt.composicao.Endereco;
+import ferreira.cnt.composicao.Telefone;
 import ferreira.cnt.ocupacao.Cargo;
 import ferreira.cnt.pessoa.Cliente;
 import ferreira.cnt.pessoa.Funcionario;
@@ -20,10 +22,11 @@ public class AplicacaoMain {
 		Cargo objCargo = new Cargo();
 		Telefone objTelefone = new Telefone();
 		Endereco objEndereco = new Endereco();
+		LocalDate objDataNasc = LocalDate.of(2000, 12, 1);
 		
-		objFuncionario.cadastrar(1, "Professor", 2000, "28/10/2023", "Nunes", "11/09/1981", objEndereco, objTelefone);
+		objFuncionario.cadastrar(1, "Professor", 2000, "28/10/2023", "Nunes", objDataNasc, objEndereco, objTelefone);
 		
-		objCliente.cadastrar("1", "Contador", "Francisco", "11/09/1981", objEndereco, objTelefone);
+		objCliente.cadastrar("1", "Contador", "Francisco", objDataNasc, objEndereco, objTelefone);
 		
 		objCargo.cadastrar("512410", "Porteiro");
 		
