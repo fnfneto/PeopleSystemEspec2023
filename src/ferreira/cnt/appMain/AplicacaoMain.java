@@ -23,14 +23,15 @@ public class AplicacaoMain {
 		Telefone objTelefone = new Telefone();
 		Endereco objEndereco = new Endereco();
 		LocalDate objDataNasc = LocalDate.of(2000, 12, 1);
+		LocalDate objDataAdm = LocalDate.of(2000, 12, 1);
 		
-		objFuncionario.cadastrar(1, "Professor", 2000, "28/10/2023", "Nunes", objDataNasc, objEndereco, objTelefone);
+		objFuncionario.cadastrar(1, "Professor", 2000, objDataAdm, "Nunes", objDataNasc, objEndereco, objTelefone);
 		
 		objCliente.cadastrar("1", "Contador", "Francisco", objDataNasc, objEndereco, objTelefone);
 		
 		objCargo.cadastrar("512410", "Porteiro");
 		
-		objTelefone.cadastrar("83", "988066901");
+		objTelefone.cadTelefone("83", "988066901");
 		
 		objEndereco.cadastrar("Rua", "Epitacio Pessoa", "1000", "Expedicionarios", "Edificio", "João Pessoa", "PB", "Brasil", "58000000");
 		

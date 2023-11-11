@@ -9,14 +9,14 @@ public class Funcionario extends Pessoa{
 	private int matricula;
 	private String cargo;
 	private double salario;
-	private String dataAdmissao;
+	private LocalDate dataAdmissao;
 	
 	
 	// Métodos
 	public void cadastrar(int matricula,
 						  String cargo, 
 						  double salario, 
-						  String dataAdmissao, 
+						  LocalDate dataAdmissao, 
 						  String nomeFunc, 
 						  LocalDate dataNascimentoFunc,
 						  Endereco enderecoFunc, 
@@ -49,11 +49,11 @@ public class Funcionario extends Pessoa{
 		this.matricula = matricula;
 	}
 
-	public String getDataAdmissao() {
+	public LocalDate getDataAdmissao() {
 		return dataAdmissao;
 	}
 
-	public void setDataAdmissao(String dataAdmissao) {
+	public void setDataAdmissao(LocalDate dataAdmissao) {
 		this.dataAdmissao = dataAdmissao;
 	}
 

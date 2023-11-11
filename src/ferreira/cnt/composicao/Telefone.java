@@ -5,7 +5,7 @@ public class Telefone {
 	private String numero;
 	
 	
-	public void cadastrar(String ddd, String numero) {
+	public void cadTelefone(String ddd, String numero) {
 		this.ddd = ddd;
 		this.numero = numero;
 	}
